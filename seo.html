@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEO Evaluation - SmartSEO</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+    <h1 class="logo">SmartSEO Analyzer</h1>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="keyword.html">Keyword Analysis</a>
+        <a href="seo.html" class="active">SEO Evaluation</a>
+        <a href="report.html">Dashboard</a>
+    </nav>
+    <div id="menu-icon">☰</div>
+</header>
+<!-- SEO Evaluation Section -->
+<section class="seo-section">
+    <div class="seo-container">
+        <h2 class="heading">📊 SEO <span>Content Evaluation</span></h2>
+    <p class="sub-text">
+        Paste your content and enter a target keyword to check keyword density,
+        readability, and receive optimization suggestions.
+    </p>
+
+    <form class="seo-form">
+        <textarea
+            placeholder="Paste your content here..."
+            rows="10"
+            required
+        ></textarea>
+        <input
+            type="text"
+            placeholder="Enter target keyword..."
+            required
+        />
+        <button type="submit" class="btn">Evaluate</button>
+    </form>
+
+    <!-- Results Box -->
+<div id="seoResults" class="results-box" style="display: none;">
+    <h3>SEO Score: <span id="seoScore">--</span></h3>
+    <ul>
+        <li><strong>Keyword Density:</strong> <span id="keywordDensity">--</span></li>
+        <li><strong>Readability:</strong> <span id="readability">--</span></li>
+        <li><strong>Meta Tags:</strong> <span id="metaTags">--</span></li>
+    </ul>
+    <p id="suggestions" class="suggestions">💡 Suggestions will be displayed here.</p>
+</div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2025 SmartSEO Analyzer. All rights reserved.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
+
